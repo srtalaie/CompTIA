@@ -1,0 +1,69 @@
+## Categories of Controls
+- Technical Controls
+	- Controls implemented using some kind of system
+		- OS system controls
+		- Firewalls, anti-virus
+- Managerial Controls
+	- Administrative controls associated with security design and implementation
+		- Security policies, SOPs (Standard Operating Procedures)
+- Operational Controls
+	- Controls implemented by people
+		- Security guards, awareness programs
+- Physical Controls
+	- Limit physical access
+		- Guard shacks
+		- Fences or locks
+		- Badge readers
+## Control Type Examples
+- Preventive Control
+	- Block access to a resource
+	- Examples:
+		- Technical - firewall rule
+		- Managerial - on-boarding policy
+		- Operational - guard shack
+		- Physical - door lock
+- Deterrent Control
+	- Discourage an intrusion attempt.
+	- Does not directly prevent access
+	- Examples:
+		- Technical - application splash screen
+		- Managerial - threat of demotion
+		- Operational - front reception desk
+		- Physical - posted warning signs
+- Detective Control
+	- Identify and log an intrusion attempt
+	- May not prevent access
+	- Examples:
+		- Technical - collecting and reviewing system logs
+		- Managerial - review login reports
+		- Operational - patrol on property
+		- Physical - motion detectors
+- Corrective Control
+	- Apply a control after an event has been detected
+	- May reverse the impact of an event and allow continual operation with minimal downtime'
+	- Examples:
+		- Technical - restoring from backups can mitigate a ransomware infection
+		- Managerial - create policies for reporting security issues
+		- Operational - contact authorities
+		- Physical - fire extinguisher
+- Compensating Control
+	- Control using other means
+	- Existing controls aren't sufficient
+	- This may only be temporary
+	- Examples:
+		- Technical - firewall blocks a specific app instead of patching
+		- Managerial - separation of duties
+		- Operational - require simultaneous guard duties
+		- Physical - generator used for power outages
+- Directive Control
+	- Direct a subject towards security compliance
+	- Relatively weak
+	- Examples:
+		- Technical - store sensitive info in protected folder
+		- Managerial - create compliance policies and procedures
+		- Operational - train users on proper security policies
+		- Physical - post sign for "Authorized Personnel Only"
+## Final Thoughts
+- Some security controls exist in multiple types of categories
+- New security controls are created as systems and processes evolve
+- Some organizations combine types
