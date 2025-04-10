@@ -1,0 +1,40 @@
+- You can't deny what you've said
+	- There is not taking it back
+- Sign a contract
+	- Your signature adds non-repudiation
+	- You really did sign the contract
+	- Others can see your signature
+- Adds a different perspective for cryptography
+	- Proof of integrity
+	- Proof of origin, with high assurance of authenticity
+## Proof of Integrity
+- Verify data does not change
+	- Data remains accurate and consistent
+- In cryptography, we use a hash
+	- Represent data as a short string of text
+	- Sometimes known as a message digest, a fingerprint
+- If the data changes, the hash changes
+	- If the person changes, you get a different fingerprint
+- Doesn't necessarily associate data with an individual
+	- Only tells you if the data has changed
+- If the hash is different, something has changed
+	- The data integrity has been compromised
+## Proof of Origin
+- Prove the message was not changed
+	- Integrity
+- Prove the source of the message
+	- Authentication
+- Make sure the signature isn't fake
+	- Non-repudiation
+- Sign with the private key
+	- The message doesn't need to be encrypted
+	- Nobody else can sign this (obviously)
+- Verify with the public key
+	- Any change to the message will invalidate the signature
+## Creating a Digital Signature
+- Hashing algorithm creates a hash of the message
+- Hash is encrypted with the private key
+- Message sent includes the data and the digital signature
+- Recipient uses the sender's public key and decrypts the digital signature
+- Once decryption takes place you have the original hash
+- Recipient performs the same hashing algorithm and will compare the hash that is included with the digital signature with the hash recipient just performed
