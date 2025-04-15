@@ -1,1 +1,91 @@
-## 
+## Change Management
+- How to make a change
+	- ex/ Upgrade software, patch an application, change firewall configuration, modify switchport
+- One of the most common risks in the enterprise
+	- Occurs very frequently
+- Often overlooked or ignored
+	- Did you feel that bite?
+- Have clear policies
+	- Frequency, duration installation process, rollback procedures
+- Sometimes extremely difficult to implement
+	- It's hard to change corporate culture
+## Change approval process
+- A formal process for managing change
+	- Avoid downtime, confusion, and mistakes
+- A typical approval process
+	- Complete the request forms
+	- Determine the purpose of the change
+	- Identify the scope of the change
+	- Schedule a date and time of the change
+	- Determine affected systems and the impact
+	- Analyze the risk associated with the change
+	- Get approval from the change control board
+	- Get end-user acceptance after the change is complete
+## Ownership
+- An individual or entity needs to make a change
+	- They own the process
+	- They don't (usually) perform the actual change
+- The owner manages the process
+	- Process updates are provided to the owner
+	- Ensures the process is followed and acceptable
+- ex/ Address label printers needs to be upgraded
+	- Shipping and Receiving department owns the process
+	- IT handles the actual change
+## Stakeholders
+- Who is impacted by this change?
+	- They'll want to have input on the change management process
+- This may not be as obvious as you might think
+	- A single change can include one individual or the entire company
+- ex/ Upgrade software used for shipping labels affects:
+	- Shipping/receiving
+	- Accounting reports
+	- Product delivery timeframes
+	- Revenue recognition - CEO visibility
+## Impact Analysis
+- Determine a risk value
+	- i.e., high, medium, low
+- The risk can be minor or far-reaching
+	- The "fix" doesn't actually fix anything
+	- The fix breaks something else
+	- Operating system failures
+	- Data corruption
+- What's the risk with NOT making the change?
+	- Security vulnerability
+	- Application unavailability
+	- Unexpected downtime to other services
+## Test results
+- Sandbox testing environment
+	- No connection to the real world or production system
+	- A technological safe space
+- Use before making a change to production
+	- Try the upgrade, apply the patch
+	- Test and confirm before deployment
+- Confirm the backout plan
+	- Move everything back to the original state
+	- A sandbox can't consider every possibility
+## Backout plan
+- The change will work perfectly and nothing will ever go bad
+	- Of course it will
+- You should always have a way to revert your changes
+	- Prepare for the worst, hope for the best
+- This isn't as easy as it sounds
+	- Some changes are difficult to revert
+- Always have backups
+	- Always have good backups
+## Maintenance window
+- When is the change happening?
+	- This might be the most difficult part of the process
+- During the workday may not be the best option
+	- Potential downtime would affect a large part of production
+- Overnights are often a better choice
+	- Challenging for 24-hour production schedules
+- The time of year may be a consideration
+	- Retail networks are frozen during the holiday season
+## Standard operating procedure
+- Change management is critical
+	- Affects everyone in the organization
+- The process must be well documented
+	- Should be available on the Intranet
+	- Along with all standard processes and procedures
+- Change to the process are reflected in the standards
+	- A living document
