@@ -8,7 +8,7 @@
 		- Security policies, SOPs (Standard Operating Procedures)
 - Operational Controls
 	- Controls implemented by people
-		- Security guards, awareness programs
+		- Security guards, awareness programs (lunch & learns)
 - Physical Controls
 	- Limit physical access
 		- Guard shacks
