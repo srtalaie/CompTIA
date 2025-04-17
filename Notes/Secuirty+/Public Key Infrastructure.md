@@ -1,0 +1,55 @@
+## Public Key Infrastructure (PKI)
+- Policies, procedures, hardware, software, people responsible for:
+	- Digital certificates: create, distribute, manage, store, revoke
+- This is a big, big endeavor
+	- Lots of planning
+- Also refers to the binding of public keys to people or devices
+	- The certificate authority
+	- Its all about trust
+## Symmetric Encryption
+- A single, shared key
+	- Encrypt with the key
+	- Decrypt with the same key
+	- If it gets our, you'll need another key
+- Secret key algorithm
+	- A shared secret
+- Doesn't scale very well
+	- Can be challenging to distribute
+	- ~10 individuals/devices
+- Very fast to use
+	- Less overhead than asymmetric encryption
+	- Often combined with asymmetric encryption
+## Asymmetric Encryption
+- Public key cryptography
+	- Two (or more) mathematically related keys
+- Private key
+	- Keep this key private
+- Public Key
+	- Anyone can see this key
+	- Give it away
+- The private key is the only key that can decrypt data encrypted with the public key
+	- You can't derive the private key from the public key
+## The Key Pair
+- Asymmetric encryption
+	- Public Key Cryptography
+- Key generation
+	- Build both the public and private key at the same time
+	- Lots of randomization
+	- Large prime numbers
+	- Lots and lots of math
+- Everyone can have the public key
+	- Only you have the private key
+- Workflow:
+	- You send a plaintext message encrypted with the public key. This combination is called the ciphertext
+	- The Ciphertext cannot be decrypted without a private key
+	- Ciphertext is sent to someone and they use their private key to decrypt the ciphertext and read the plaintext message
+## Key escrow
+- Someone else holds your decryption keys
+	- Your private keys are in the hands of a 3rd-party
+	- This may be within your own organization
+- This can be a legitimate business arrangement
+	- A business might need access to employee information
+	- Government agencies may need to decrypt partner data
+- Controversial?
+	- Of course
+	- But may still be required
