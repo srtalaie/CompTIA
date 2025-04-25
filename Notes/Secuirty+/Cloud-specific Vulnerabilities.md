@@ -1,0 +1,32 @@
+## Security in the cloud
+- Cloud adoption has been nearly universal
+	- It's difficult to find a company NOT using the cloud
+- We've put sensitive data in the cloud
+- We're not putting in the right protections
+	- 76% of organizations aren't using MFA for management console users
+- Simple best-practices aren't being used
+	- 63% of code in production is unpatched
+	- Vulnerabilities rated high or critical (CVSS >= 7.0)
+## Attack the services
+- Denial of Service (DoS)
+	- Fundamental attack type
+	- Uses a single source to overload a server, rendering it unavailable to legitimate users
+- Distributed Denial of Service (DDoS)
+	- Attack that employs multiple compromised devices (a botnet) to overwhelm the target, making it harder to detect and defend against
+- Authentication bypass
+	- Take advantage of weak or faulty authentication
+- Directory traversal
+	- Faulty configurations put data at risk
+- Remote code execution
+	- Take advantage of unpatched systems
+## Attack the application
+- Web application attacks have increased
+	- Log4j and Spring Cloud Function
+	- East to exploit, rewards are extensive
+- Cross-site Scripting (XSS)
+	- Take advantage of poor input validation
+- Out of bounds write
+	- Write to unauthorized memory areas
+	- Data corruption, crashing, or code execution
+- SQL injection
+	- Get direct access to a database
