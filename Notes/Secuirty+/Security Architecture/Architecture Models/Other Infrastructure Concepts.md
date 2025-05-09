@@ -1,0 +1,115 @@
+## Attacks can happen anywhere
+- Two categories for IT security
+	- On-premise data
+	- Cloud-based data
+- Cloud-based security is centralized and costs less
+	- No dedicated hardware, no data center to secure
+	- A third-party handles everything
+- On-premises puts the security burden on the client
+	- Data center and security and infrastructure costs
+- Attackers don't care where the security is
+## On-premise security
+- Customize your own security posture
+	- Full control when everything is in-house
+- On-site IT team can manage security better
+	- The local team can ensure everything is secure
+	- A local team though can be expensive and difficult to staff
+- Local team maintains uptime and availability
+	- System checks can occur at any time
+	- No phone call for support
+- Security changes can take time
+	- New equipment, configurations and additional costs
+## Centralized vs. decentralized
+- Most organizations are physically decentralized
+	- Many locations, cloud providers, operating systems, etc.
+- Difficult to manage and protect so many diverse systems
+	- Centralize the security management
+- A centralized approach
+	- Correlated alerts
+	- Consolidated log file analysis
+	- Comprehensive system status and maintenance/patching
+- It's not perfect
+	- Single point of failure, potential performance issues
+## Virtualization
+- Virtualization
+	- Run many different operating systems on the same hardware
+- Each application instance has its own operating system
+	- Adds overhead and complexity
+	- Virtualization is relatively expensive
+- How it is structured
+	- On the physical device or infrastructure in which all VMs (Virtual Machines) are built off of and will run on
+	- A hypervisor is software that sits on top of that infrastructure and it is responsible to manage all the resources between each VM
+	- Each VM has its own guest operating system
+	- Applications are then ran on VMs environment
+## Application containerization
+- Container
+	- Contains everything you need to run an application
+	- Code and dependencies
+	- A standardized unit of software
+- How it works
+	- There is a physical device or infrastructure in which each container will be built off of
+	- On top of the physical device is the host operating system
+	- Above the host operating system is the containerization software that manages the relationship between the OS and the applications
+- An isolated process in a sandbox
+	- Self-contained
+	- Apps can't interact with each other
+- Container image
+	- A standard for portability
+	- Lightweight, uses the host kernel
+	- Secure separation between applications
+## Virtualization vs. containerization
+- Both have hardware or infrastructure as a bottom layer in which everything will run off of
+- For virtualization, a hypervisor sits on top of that hardware while a host operating system sits on top of the hardware for containerization
+- In containerization on top of that host operating system sits the containerization software (i.e. Docker) which manages all of the different apps that are running on the system
+- In virtualization the guest operating systems are running as their separate entities on each virtual machine
+## IoT (Internet of Things)
+- Devices that are integrated into your network and support features and services you use on a day to day basis
+- Sensors
+	- Heating and cooling, lighting
+- Smart devices
+	- Nome automation, video doorbells
+- Wearable technology
+	- Watches, health monitors
+- Facility automation
+	- Temperature, air quality, lighting
+- Weak defaults
+	- IoT manufacturers are not security professionals
+## SCADA/ICS
+- Supervisory Control and Data Acquisition System
+	- Large-scale, multi-site Industrial Control Systems (ICS)
+- PC manages equipment
+	- Power generation, refining, manufacturing equipment
+	- Facilities, industrial, energy, logistics
+- Distributed control systems
+	- Real-time information
+	- System control
+- Requires extensive segmentation
+	- No access from the outside
+## RTOS (Real Time Operating System)
+- An operating system with a deterministic processing schedule
+	- No time to wait for other processes
+	- Industrial equipment, automobiles (ABS systems)
+	- Military environments
+- Extremely sensitive to security issues
+	- Non-trivial systems
+	- Need to always be available
+	- Difficult to know what type of security is in place
+## Embedded systems
+- Hardware and software designed for a specific function
+	- Or to operate as part of a larger system
+- Is built with only this task in mind
+	- Can be optimized for size and/or cost
+- Common examples
+	- Traffic light controllers
+	- Digital watches
+	- Medical imaging systems
+## High availability
+- Redundancy doesn't always mean always available
+	- May need to be powered on manually
+- HA (High Availability)
+	- Always on, always available
+- May include many different components working together
+	- Active/Active can provide scalability advantages
+- Higher availability almost always means higher costs
+	- There's always another contingency you could add
+	- Upgraded power, high-quality server components, etc.
