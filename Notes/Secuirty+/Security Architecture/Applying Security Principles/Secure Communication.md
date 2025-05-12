@@ -1,0 +1,72 @@
+## VPNs
+- Virtual Private Networks
+	- Encrypted (private) data traversing a public network
+- Concentrator 
+	- Encryption/decryption access device
+	- Often integrated into a firewall
+- Many deployment options
+	- Specialized cryptographic hardware
+	- Software-based options available
+- Used with client software
+	- Sometimes built into the OS
+## Encrypted tunnel
+- Remote user outside of the corporate network sends their requests through an encrypted tunnel to the VPN concentrator, which then decrypts the traffic and sends that data in the clear to the internal corporate network.
+- All traffic within the tunnel is encrypted
+- Keep data private across the public internet
+- Encrypts your data
+	- Adds new headers and trailers
+	- This process of embedding the original unsecure headers within the new IP header is called tunneling
+	- IPSec Headers and IPSec Trailers used to signify where the original header and data begin and end
+	- New IP Header provides information of which VPN Concentrator to send this info to
+- Decrypt on the other side
+	- Original data is delivered
+	- Concentrator removes the New IP Header along with the IPSec headers/trailers, and decrypts the data and sends it on its way
+## SSL/TLS VPN (Secure Sockets Layer/Transport Layer Security VPN)
+- Uses common SSL/TLS protocol (tcp/443) to encrypt web server traffic
+	- (Almost) No firewall issues
+- No big VPN clients
+	- Usually remote access communication
+- Authenticate users
+	- No requirement for digital certificates or shared passwords (like IPSec)
+- Can be run from a browser or from a (usually light) VPN client
+	- Across many operating systems
+- On-demand access from a remote device
+	- Software connects to a VPN concentrator
+- Some software can be configured to be always-on
+## Site-to-site IPSec VPN
+- Always-on
+	- Or almost always
+- Firewalls often act as VPN concentrators
+	- Provides an encrypted channel on both ends between the remote site and corporate network
+	- Here the firewalls act as the VPN endpoints
+## SD-WAN
+- Software Defined Networking in a Wide Area Network
+	- A WAN built for the cloud
+- The data center used to be in one place
+	- The cloud has changed everything
+- Cloud-based applications communicate directly to the cloud
+	- No need to hop through a central point
+- Traditionally there was a large data center that contained your database, email, web services, etc.
+	- You would have WAN connect to all the remote sites
+- Now the cloud contains all of that
+	- With SD-WAN, you can still connect to the data center directly, while also getting dynamic connections from the remote sites directly to the cloud
+## Secure Access Service Edge (SASE)
+- Update secure access for cloud services
+	- Securely connect from different locations
+- Next generation of VPN
+- Security technologies in the cloud
+	- Located close to exiting cloud services
+- SASE clients on all devices
+	- Streamlined and automatic
+## Selection of effective controls
+- Many different security options
+	- Selecting the right choice can be challenging
+- VPN
+	- SSL/TLS VPN for user access
+	- IPSec tunnels for site-to-site access
+- SD-WAN
+	- Manage the network connectivity to the cloud
+	- Does not adequately address security concerns
+- SASE
+	- A complete network security solution
+	- Requires planning and implementation

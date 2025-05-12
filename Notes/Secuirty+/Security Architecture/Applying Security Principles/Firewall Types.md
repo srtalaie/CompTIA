@@ -1,0 +1,71 @@
+## The universal security control
+- Standard issue
+	- Home, office, and in your operating system
+- Control the flow of network traffic
+	- Everything passes through the firewall
+- Corporate control of outbound and inbound data'
+	- Sensitive materials
+- Control of inappropriate content
+	- Not safe for work, parental controls
+- Protection against evil
+	- Anti-virus, anti-malware
+## Network-based firewalls
+- OSI Layers:
+	- Layer 1 - physical
+	- Layer 2 - data link
+	- Layer 3 - network
+	- Layer 4 - transport
+	- Layer 5 - session
+	- Layer 6 - presentation
+	- Layer 7 - application
+- Filter traffic by port number or application
+	- OSI layer 4 (TCP port or UDP port number) vs. OSI layer 7 (Application layer)
+	- Traditional vs. NGFW firewalls
+- Encrypt traffic
+	- VPN between sites
+- Most firewalls can be layer 3 devices (routers)
+	- Often sits on the ingress/egress of the network
+	- Network Address Translation (NAT) functionality
+	- Authenticate dynamic routing communication
+## UTM/All-in-one security appliance
+- Unified Threat Management (UTM)/Web security gateway
+	- URL filter/Content inspection
+	- Malware inspection
+	- Spam filter
+	- CSU/DSU
+	- Router, Switch
+	- Firewall
+	- IDS/IPS
+	- Bandwidth shaper
+	- VPN endpoint
+- Only operate at layer 4 (port numbers); with all these capabilities it affects performance
+## Next-generation firewall (NGFW)
+- The OSI Application Layer (7)
+	- All data in every packet
+- Can be called different names
+	- Application layer gateway
+	- Stateful multilayer inspection
+	- Deep packet inspection
+- Requires some advanced decodes
+	- Every packet mist be analyzed and categorized before a security decision is determined
+## NGFWs
+- Network-based Firewalls
+	- Control traffic flows based on the application
+		- ex/ of decisions it can make:  Microsoft SQL Server regardless of port, can view but not post on Twitter, can allow or restrict anyone from viewing YouTube videos
+		- It is possible all 3 of those are using the same port numbers, but the NGFW looks at the application and doesn't necessarily rely on using a port number to make forwarding decisions 
+- Intrusion Prevention Systems
+	- Identify the application
+	- Apply application-specific vulnerability signatures to the traffic
+- Content filtering
+	- URL filters
+	- Control website traffic by category (i.e. prevent anyone from visiting a gambling site)
+## Web application firewall (WAF)
+- Not like a "normal" firewall
+	- Applies rules to HTTP/HTTPS conversations
+- Allow or deny based on expected input
+	- Unexpected input is a common method of exploiting an application
+- SQL injection
+	- Add your commands to an application's SQL query
+	- WAF can recognize and block SQL injections within a traffic flow4
+- A major focus of Payment Card Industry Data Security Standard (PCI DSS)
+- Most commonly used in conjunction with NGFWs
