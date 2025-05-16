@@ -10,7 +10,7 @@
 - A single, shared key
 	- Encrypt with the key
 	- Decrypt with the same key
-	- If it gets our, you'll need another key
+	- If it gets out, you'll need another key
 - Secret key algorithm
 	- A shared secret
 - Doesn't scale very well

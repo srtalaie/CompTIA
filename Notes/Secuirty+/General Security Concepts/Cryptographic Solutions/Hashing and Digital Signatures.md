@@ -14,7 +14,7 @@
 - ex/ My name is Professor Messer.
 	- Hash: 19da9a2e26f3bff67f0522f962851c42542b8659333ac53397c8d65aa7a3f871
 - ex/ My name is Professor Messer!
-	- Hash: 54381cae1eea10892d81c8688d06d1928b4ee8495061a792864f83092b033aea'
+	- Hash: 54381cae1eea10892d81c8688d06d1928b4ee8495061a792864f83092b033aea
 - One minor change to the text creates a completely different hash
 ## Collision
 - Hash functions
