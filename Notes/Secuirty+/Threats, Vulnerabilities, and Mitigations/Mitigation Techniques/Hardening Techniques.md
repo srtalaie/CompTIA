@@ -34,7 +34,7 @@
 - A different method of threat protection
 	- Scale to meet the increasing number of threats
 - Detect a threat
-	- Signatures aren't the inly detection tool
+	- Signatures aren't the only detection tool
 	- Behavioral analysis, machine learning, process monitoring
 	- Lightweight agent on the endpoint
 - Investigate the treat

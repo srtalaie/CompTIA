@@ -25,7 +25,7 @@
 	- Coordinated attacks
 - Asymmetric threats
 	- The attacker may have fewer resources than the victim
-## DDoS reflection and amplificaton
+## DDoS reflection and amplification
 - Turn your small attack into a big attack
 	- Often reflected off another device or service
 - An increasingly common network DDoS technique
