@@ -12,7 +12,7 @@
 - Ownership
 	- Associate a person with an asset
 	- Useful for tracking a system
-- Slassification
+- Classification
 	- Type of asset
 	- Hardware (capital expenditure)
 	- Software (operating expenditure)
