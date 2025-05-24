@@ -1,0 +1,62 @@
+## Network-based firewall
+- Filter traffic by port number (traditional) or application (NGFW)
+	- Traditional vs. NGFW
+- Encrypt traffic
+	- VPN between sites
+- Most firewalls can be layer 3 devices (routers)
+	- Often sits on the ingress/egress of the network or at the point where the outside network meets the inside network
+	- Network Address Translation (NAT)
+	- Dynamic routing
+## Next-generation Firewalls (NGFW)
+- The OSI Application Layer
+	- Layer 7 firewall
+- Can be called different names
+	- Application layer gateway
+	- Stateful multilayer inspection
+	- Deep packet inspection
+- Requires some advanced decodes
+	- Every packet must be analyzed, categorized, and a security decision determined
+## Ports and protocols
+- Make forwarding decisions based on protocol (TCP or UDP) and port number
+	- Traditional port-based firewalls
+	- Add to an NGFW for additional security policy options
+- Based on destination protocol and port
+	- Web server: tcp/80, tcp/443
+	- SSH server: tcp/22
+	- Microsoft RDP: tcp/3389
+	- DNS query: udp/53
+	- NTP: udp/123
+## Firewall rules
+- A logical path
+	- Usually top-to-bottom
+- Can be very general or very specific
+	- Specific rules are usually at the top
+- Implicit deny - if no rule matches, automatically denied
+	- Most firewalls include a deny at the bottom
+		- Even if you didn't put one
+- Access Control Lists (ACLs)
+	- Allow or disallow traffic
+	- Groupings of Categories
+		- Source IP, Destination IO, port number, time of day, application, etc.
+## Screened subnet
+- Commonly holds devices and services that need to connect to the internet. Keeps the internet from accessing your private internal network
+- An additional layer of security between the you and the Internet
+	- Public access to public resources
+	- Private data remains inaccessible
+## IPS rules
+- Intrusion Prevention System
+	- Usually integrated into an NGFW
+- Different ways to find malicious traffic
+	- Look at traffic as it passes by
+- Signature-based
+	- Look for a perfect match
+- Anomaly-based
+	- Build a baseline of what's "normal"
+	- Unusual traffic patterns are flagged
+- You determine what happens when unwanted traffic appears
+	- Block, allow, send an alert, etc.
+- Thousands of rules
+- Rules can be customized by group
+	- Or as individual rules
+- This can take time to find the right balance
+	- Security/alert "noise"/false positives
