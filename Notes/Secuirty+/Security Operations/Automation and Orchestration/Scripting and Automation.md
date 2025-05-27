@@ -1,1 +1,81 @@
-## 
+## Scripting and automation
+- Automate and orchestrate
+	- You don't have to be there
+	- Monitor and resolve problems before they happen
+- The need for speed
+	- The script is as fast as the computer
+	- No typing delays
+	- No human error
+- Automate mundane tasks
+	- You can do something more creative
+## Automation benefits
+- Save time
+	- No typing required
+	- Run multiple times over and over
+- Enforce baselines
+	- Missing an important security patch?
+	- Automatically install when identified
+- Standard infrastructure configurations
+	- Use a script to build a default router configuration
+	- Add firewall rules to a new security appliance
+	- IP configurations, security rules, standard configuration options
+- Secure scaling
+	- Orchestrate cloud resources
+	- Quickly scale up and down
+	- Automation ensures proper security also scales
+- Employee retention
+	- Automate the boring stuff
+	- Ease the workload
+	- Minimize the mundane tasks
+	- Employees work is rewarding instead of repetitive
+- Reaction time
+	- The computer is much faster than you
+	- An event can be addressed immediately
+	- A script doesn't need a wake up call
+- Workforce multiplier
+	- Scripting works 24/7
+	- Allows the smart people to do smarter work somewhere else
+## Cases for automation
+- User and resource provisioning
+	- On-boarding and off-boarding
+	- Assign access to specific resources
+- Guard rails
+	- A set of automated validations
+	- Limit behaviors and responses
+	- Constantly check to ensure proper implementation
+	- Reduce errors
+- Security groups
+	- Assign (or remove) group access
+	- Constant audits without human intervention
+- Ticket creation
+	- Automatically identify issues
+	- Script emails submissions into a ticket
+- Escalation
+	- Correct issue before involving humans
+	- If issue isn't resolved, contact the on-call tech
+- Controlling services and access
+	- Automatically enable and disable services
+	- No set and forget
+- Continuous integration and testing
+	- Constant development and code updates
+	- Securely test and deploy
+- Integrations and application programming interfaces (APIs)
+	- Interact with third-party devices and services
+	- Cloud services, firewalls, operating systems
+	- Talk their language
+## Scripting considerations
+- Complexity
+	- Many moving parts
+	- All of the parts have to reliably work together
+- Cost
+	- It takes money to create the script
+	- It takes money to implement the automation
+- Single point of failure
+	- What happens if the script stops working
+	- Could be a significant deal-breaker
+- Technical debt
+	- Patching problems may push the issue down the road
+	- It's going to be more expensive to fix later
+- Ongoing supportability
+	- The scrip works great today but may not work great tomorrow
+	- Plan for changes and updates
